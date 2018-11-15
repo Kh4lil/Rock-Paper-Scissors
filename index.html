@@ -6,22 +6,23 @@
 <body>
   <script>
  	function computerPlay(){
-        var moves = Array('Rock', 'Paper', 'Scissor');
+        var moves = Array('rock', 'paper', 'scissor');
          return moves[Math.floor(Math.random()*moves.length)];
      }
      function playRound(playerSelection, computerSelection){
-         if(playerSelection == "Rock" && computerSelection == "Scissor"){
+         if(playerSelection == "rock" && computerSelection == "scissor"){
             return "You Won! Rock beats Scissor"
-         }else  if(playerSelection == "Paper" && computerSelection == "Rock"){
+         }else  if(playerSelection == "paper" && computerSelection == "rock"){
             return "You Won! Paper beats Rock"
-         }else  if(playerSelection == "Rock" && computerSelection == "Paper"){
+         }else  if(playerSelection == "rock" && computerSelection == "paper"){
             return "You Lost! Paper beats Rock"
-         } else if(playerSelection == "Paper" && computerSelection == "Scissor"){
+         } else if(playerSelection == "paper" && computerSelection == "scissor"){
             return "You Lost! Scissor beats Paper"
          }
      }
-    const playerSelection = prompt("Make a play")
-    const computerSelection = computerPlay()
+    const playerSelection = prompt("Make a play");
+    playerSelection.toLowerCase;
+    const computerSelection = computerPlay();
     console.log(playRound(playerSelection, computerSelection))
      
   </script>
