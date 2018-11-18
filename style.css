@@ -1,0 +1,84 @@
+body {
+    background: url('./images/background.jpg') no-repeat fixed;
+    margin: 0 auto;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.topMenu h2{
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+.scoreboard h1{
+    position: relative;
+    bottom:950px;
+    left:265px;
+}
+#you h1{
+    position: relative;
+    bottom:575px;
+    left:220px;
+    font-size: 100px;   
+}
+#cpu h1{
+    position: relative;
+    bottom:760px;
+    left:1000px;
+    font-size: 100px;   
+}
+.PokeImages img{
+    height: 180px;
+    width: 105px;
+    position: relative;
+    top: 20px;
+    left:300px;
+    cursor: pointer;
+}
+.PokeImagesCPU img{
+    height: 180px;
+    width: 105px;
+    position: relative;
+    bottom: 500px;
+    left:800px;
+}
+div.PokeImages{
+    box-sizing: border-box;
+    display: block;
+    padding-right: 100px;
+    float: left;
+}
+div.PokeImagesCPU{
+    box-sizing: border-box;
+    display: block;
+    padding-right: 100px;
+    float: left;
+    border-color: greenyellow;
+}
+.ElemImages img{
+    height: 130px;
+    width: 100px;
+    position: relative;
+    top: 40px;
+    right:10px;
+}
+.ElemImagesCPU img{
+    height: 130px;
+    width: 100px;
+    position: relative;
+    bottom: 480px;
+    left:710px;
+}
+#squirtle:hover{
+    transition: all 0.5s ease;
+    -webkit-filter: brightness(80%);
+}
+#charmander:hover{
+    transition: all 0.5s ease;
+    -webkit-filter: brightness(80%);
+}
+#bulbasaur:hover{
+    transition: all 0.5s ease;
+    -webkit-filter: brightness(80%);
+}
+

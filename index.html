@@ -2,8 +2,42 @@
 <html>
 <head>
   <title>Page Title</title>
+  <link href="./style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+  <div class = topMenu>
+      <h2>Remember: Grass beats Water, Fire beats Grass, Water beats Fire!</h2>
+  </div>
+  <div class = "PokeImages">
+    <img class ="front" id="squirtle" src="./images/squirtle.jpg" alt="Squirtle image"><br>
+    <img class ="front"id="charmander" src="./images/charmander.jpg" alt="Charmander image"><br>
+    <img class ="front"id="bulbasaur" src="./images/bulbasaur.jpg" alt="Bulbasaur image">
+  </div>
+  <div class = "ElemImages">
+    <img id="water" src="./images/water.jpg" alt="Water Element"><br><br><br><br>
+    <img id="fire" src="./images/fire.jpg" alt="Fire Element"><br><br><br><br>
+    <img id="grass" src="./images/grass.jpg" alt="Grass Element">
+  </div>
+  <div class = "PokeImagesCPU">
+    <img class ="front" id="squirtleCPU" src="./images/squirtle.jpg" alt="Squirtle image CPU"><br>
+    <img class ="front"id="charmanderCPU" src="./images/charmander.jpg" alt="Charmander image CPU"><br>
+    <img class ="front"id="bulbasaurCPU" src="./images/bulbasaur.jpg" alt="Bulbasaur image CPU">
+  </div>
+  <div class = "ElemImagesCPU">
+    <img id="water" src="./images/water.jpg" alt="Water Element CPU"><br><br><br><br>
+    <img id="fire" src="./images/fire.jpg" alt="Fire Element CPU"><br><br><br><br>
+    <img id="grass" src="./images/grass.jpg" alt="Grass Element CPU">
+  </div>
+  <div class ="scoreboard">
+      <h1>Scoreboard:</h1>
+  </div>
+  <div id="you">
+      <h1>YOU</h1>
+  </div>
+  <div id="cpu">
+    <h1>CPU</h1>
+</div>
+  
   <script>
  	function computerPlay(){
         var moves = Array('rock', 'paper', 'scissor');
