@@ -28,8 +28,10 @@
     <img id="fire" src="./images/fire.jpg" alt="Fire Element CPU"><br><br><br><br>
     <img id="grass" src="./images/grass.jpg" alt="Grass Element CPU">
   </div>
-  <div class ="scoreboard">
-      <h1>Scoreboard:</h1>
+  <div class ="score-board">
+      <div id="user-label" class ="badge">Player</div>
+      <div id="cpu-label" class = "badge">CPU</div>
+      <span id="user-score">0</span>:<span id="cpu-score">0</span>
   </div>
   <div id="you">
       <h1>YOU</h1>
@@ -38,36 +40,7 @@
     <h1>CPU</h1>
 </div>
   
-  <script>
- 	function computerPlay(){
-        var moves = Array('rock', 'paper', 'scissor');
-         return moves[Math.floor(Math.random()*moves.length)];
-     }
-     function playRound(playerSelection, computerSelection){
-         if(playerSelection == "rock" && computerSelection == "scissor"){
-            return "You Won! Rock beats Scissor"
-         }else  if(playerSelection == "paper" && computerSelection == "rock"){
-            return "You Won! Paper beats Rock"
-         }else  if(playerSelection == "rock" && computerSelection == "paper"){
-            return "You Lost! Paper beats Rock"
-         } else if(playerSelection == "paper" && computerSelection == "scissor"){
-            return "You Lost! Scissor beats Paper"
-         } else if (playerSelection != "paper" || playerSelection != "rock" || playerSelection != "scissor") { 
-             return "Invalid input, Try again."
-         }
-         else return "It is a Draw! Try Again."
-     }
-    function playerPlay(){
-        var move = prompt("Make a play");
-        return move.toLowerCase();
-    }
-    function game(){
-        for (let i = 1; i <= 5; i++){
-            const playerSelection = playerPlay();
-            const computerSelection = computerPlay();
-            console.log(`Round Number: ${i} => ` + playRound(playerSelection, computerSelection))
-        }
-    }    
+  <script src="app.js" charset="utf-8">      
   </script>
 </body>
 </html>
