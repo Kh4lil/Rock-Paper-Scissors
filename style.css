@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url('./images/background.jpg') no-repeat fixed;
+    background: url('./images/background2.jpg') no-repeat fixed;
     margin: 0 auto;
     background-size: cover;
     overflow: hidden;
@@ -17,12 +17,13 @@ body {
     border: 3px solid white;
     width: 180px;
     position: relative;
-    bottom:900px;
-    left:650px;
+    bottom:950px;
+    left:630px;
     font-size: 70px; 
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;   
+    background-color: purple;
 }
 .badge{
     background: #E2584D;
@@ -45,18 +46,21 @@ body {
     position: relative;
     top:20px;
     font-size:50px;
+    color:#E2584D;
 }
 #you h1{
     position: relative;
     bottom:600px;
     left:220px;
     font-size: 160px;   
+    color: blue;
 }
 #cpu h1{
     position: relative;
     bottom:780px;
     left:1000px;
-    font-size: 160px;   
+    font-size: 160px; 
+    color: red;  
 }
 .PokeImages img{
     height: 180px;
@@ -103,25 +107,18 @@ div.PokeImagesCPU{
 #squirtle:hover{
     transition: all 0.5s ease;
     -webkit-filter: brightness(80%);
+    box-shadow: 0 0 0 5px inset, 0 0 5px green, 0 0 10px green;
+    transition: box-shadow 1s;
 }
 #charmander:hover{
     transition: all 0.5s ease;
     -webkit-filter: brightness(80%);
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
 }
 #bulbasaur:hover{
     transition: all 0.5s ease;
     -webkit-filter: brightness(80%);
-}
-
-.green-glow{
-    transition: all 0.5s ease ;
-    -webkit-filter: brightness(0%) !important;
-}
-.red-glow{
-    border: 4px solid #fc121b;
-    box-shadow: 0 0 10px #d01115;
-}
-.gray-glow{
-    border: 4px solid #464647;
-    box-shadow: 0 0 10px #25292b;
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
 }

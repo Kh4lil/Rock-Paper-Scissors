@@ -3,12 +3,12 @@ var cpuScore = 0;
 const userScore_span = document.getElementById("user-score");
 const cpuScore_span = document.getElementById("cpu-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const paper_div = document.getElementById("squirtle");
-const rock_div = document.getElementById("charmander");
-const scissor_div = document.getElementById("bulbasaur");
+const squirtle_div = document.getElementById("squirtle");
+const charmander_div = document.getElementById("charmander");
+const bulbasaur_div = document.getElementById("bulbasaur");
 
 function getComputerChoice(){
-    var moves = Array('rock', 'paper', 'scissor');
+    var moves = Array('charmander', 'squirtle', 'bulbasaur');
     return moves[Math.floor(Math.random()*moves.length)];
 }
 function win(){
@@ -29,33 +29,33 @@ function draw(){
 function game(userChoice){
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice){
-        case "rockscissor":
-        case "paperrock":
-        case "scissorpaper":
+        case "charmanderbulbasaur":
+        case "squirtlecharmander":
+        case "bulbasaursquirtle":
             win();
             break;
-        case "rockpaper":
-        case "paperscissor":
-        case "scissorrock":  
+        case "charmandersquirtle":
+        case "squirtlebulbasaur":
+        case "bulbasaurcharmander":  
             lose();
             break; 
-        case "rockrock":
-        case "paperpaper":
-        case "scissorscissor":  
+        case "charmandercharmander":
+        case "squirtlesquirtle":
+        case "bulbasaurbulbasaur":  
             draw();
             break; 
     }
 }
 
 function main(){
-    rock_div.addEventListener('click', function(){
-        game("rock");
+    charmander_div.addEventListener('click', function(){
+        game("charmander");
     })
-    paper_div.addEventListener('click', function(){
-        game("paper");
+    squirtle_div.addEventListener('click', function(){
+        game("squirtle");
     })
-    scissor_div.addEventListener('click', function(){
-        game("scissor");
+    bulbasaur_div.addEventListener('click', function(){
+        game("bulbasaur");
     })
 }
 main();
