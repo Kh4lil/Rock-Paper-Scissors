@@ -11,11 +11,10 @@ function getComputerChoice(){
     var moves = Array('rock', 'paper', 'scissor');
     return moves[Math.floor(Math.random()*moves.length)];
 }
-function win(userChoice){
+function win(){
     userScore++;
     userScore_span.innerHTML = userScore;
     cpuScore_span.innerHTML = cpuScore;
-    document.getElementById(userChoice).classList.add('green-glow');
 }
 function lose(){
     cpuScore++;
