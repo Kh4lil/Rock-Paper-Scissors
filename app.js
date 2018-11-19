@@ -20,6 +20,7 @@ function lose(){
     cpuScore++;
     cpuScore_span.innerHTML = cpuScore;
     userScore_span.innerHTML = userScore;
+    document.getElementById(userChoice).classList.add('red');
 }
 function draw(){
     userScore_span.innerHTML = userScore;
