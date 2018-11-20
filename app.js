@@ -11,18 +11,18 @@ function getComputerChoice(){
     var moves = Array('charmander', 'squirtle', 'bulbasaur');
     return moves[Math.floor(Math.random()*moves.length)];
 }
-function win(){
+function win(userChoice, computerChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     cpuScore_span.innerHTML = cpuScore;
+    console.log(userChoice);
 }
-function lose(){
+function lose(userChoice, computerChoice){
     cpuScore++;
     cpuScore_span.innerHTML = cpuScore;
     userScore_span.innerHTML = userScore;
-    document.getElementById(userChoice).classList.add('red');
 }
-function draw(){
+function draw(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     cpuScore_span.innerHTML = cpuScore;
 }
@@ -48,15 +48,10 @@ function game(userChoice){
     }
 }
 
+
 function main(){
-    charmander_div.addEventListener('click', function(){
-        game("charmander");
-    })
-    squirtle_div.addEventListener('click', function(){
-        game("squirtle");
-    })
-    bulbasaur_div.addEventListener('click', function(){
-        game("bulbasaur");
-    })
+    charmander_div.addEventListener('click', () => game("charmander"));
+    squirtle.addEventListener('click', () => game("squirtle"));
+    bulbasaur.addEventListener('click', () => game("bulbasaur"));
 }
 main();
